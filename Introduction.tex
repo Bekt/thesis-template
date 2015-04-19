@@ -1,0 +1,50 @@
+\chapter{Introduction}
+
+  This is a generic and customizable thesis/dissertation \LaTeX template. The title and the signature pages follow the University of Arkansas undergraduate Honors College requirements (2015). However, feel free to modify them according to your needs.
+
+\section{Background}
+
+To compile:
+
+\begin{quote}
+  \begin{Verbatim}
+$ pdflatex Paper.tex
+$ open Paper.pdf
+  \end{Verbatim}
+\end{quote}  
+
+\section{Goals}
+
+This is a section of a chapter. The following is an example of an attached figure.
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=\textwidth,height=150px,keepaspectratio]{img1}
+    \caption{Caption for the figure.}~\label{fig:mona_lisa}
+\end{figure}
+
+
+\subsection{Examples}
+
+This is a sub-section. The following is an example of a table.
+
+\begin{figure}[H]
+\centering
+\singlespacing
+\begin{tabular}{c c c c}
+  A & B & C & D \\
+  \hline
+  1 & 2 & 3 & 4 \\  
+  10 & 20 & 30 & 40 \\
+\end{tabular}
+\caption{This is a basic table.}~\label{fig:tab_1}
+\end{figure}
+
+You can reference the Figure \ref{fig:tab_1} like this.
+
+\section{More Examples}
+
+You can leave a footnote like this\footnote{I'm cool}.
+
+\noindent 
+You can cite something like this \cite{einstein}.

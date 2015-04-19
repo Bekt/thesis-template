@@ -1,0 +1,84 @@
+%% Author: Kanat Bekt
+%% Description: Generic and customizable thesis/dissertation template.
+%% URL: https://github.com/Bekt/thesis-template
+
+\documentclass[12pt,letterpaper]{report}
+\usepackage[left=1.1in, right=1.1in, top=1.0in, bottom=1.0in]{geometry}
+
+% Check if with latex or pdflatex.
+\ifx\pdftexversion\undefined
+  \usepackage[dvips]{graphicx}
+\else
+  \usepackage[pdftex]{graphicx}
+\fi
+
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{fancyvrb}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{tabulary}
+
+% Graphics Path
+\graphicspath{{images/}}
+
+% Table of contents.
+\setcounter{secnumdepth}{1}
+\setcounter{tocdepth}{1}
+
+% Chapter title format.
+\titleformat{\chapter}
+  {\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+
+% Chapter, section, subsection title spacings.
+\titlespacing*{\chapter}{0pt}{0ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\titlespacing*{\section} {0pt}{1ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\subsection} {0pt}{2ex plus 1ex minus .2ex}{1ex plus .2ex}
+
+% Spacing after a caption.
+\setlength{\belowcaptionskip}{-15pt}
+
+% Spacing before a footer.
+\setlength{\skip\footins}{0.5cm}
+
+
+\begin{document}
+
+  \onehalfspacing
+  \include{Title}
+
+  \singlespacing
+  \pagenumbering{gobble}
+  \include{Signatures}
+
+  \onehalfspacing
+  \include{Abstract}
+
+  % Roman numeral numbering until introduction.
+  \pagestyle{plain}
+  \pagenumbering{roman}
+  \setcounter{page}{4}
+
+  \onehalfspacing
+  \tableofcontents
+  \pagebreak
+
+  % Change the numbering back to normal.
+  \pagestyle{plain}
+  \pagenumbering{arabic}
+  \setcounter{page}{1}
+  
+  \onehalfspacing
+  \include{Introduction}
+  \include{RelatedWork}
+  \include{Approach}
+  \include{Evaluation}
+  \include{Conclusion}
+
+  \singlespacing
+  \addcontentsline{toc}{chapter}{References}
+  \include{References}
+
+\end{document}
