@@ -21,7 +21,7 @@
 \usepackage{hyperref}
 \usepackage{tabulary}
 
-% Graphics Path
+% Graphics path.
 \graphicspath{{images/}}
 
 % Table of contents.
@@ -47,14 +47,14 @@
 \begin{document}
 
   \onehalfspacing
-  \include{Title}
+  \include{chapters/Title}
 
   \singlespacing
   \pagenumbering{gobble}
-  \include{Signatures}
+  \include{chapters/Signatures}
 
   \onehalfspacing
-  \include{Abstract}
+  \include{chapters/Abstract}
 
   % Roman numeral numbering until introduction.
   \pagestyle{plain}
@@ -69,16 +69,16 @@
   \pagestyle{plain}
   \pagenumbering{arabic}
   \setcounter{page}{1}
-  
+
   \onehalfspacing
-  \include{Introduction}
-  \include{RelatedWork}
-  \include{Approach}
-  \include{Evaluation}
-  \include{Conclusion}
+  \include{chapters/Introduction}
+  \include{chapters/RelatedWork}
+  \include{chapters/Approach}
+  \include{chapters/Evaluation}
+  \include{chapters/Conclusion}
 
   \singlespacing
   \addcontentsline{toc}{chapter}{References}
-  \include{References}
+  \include{chapters/References}
 
 \end{document}
