@@ -4,7 +4,7 @@ Generic and customizable thesis / dissertation LaTeX template with
 examples.
 
 Please see
-`[Paper.pdf](https://github.com/Bekt/thesis-template/raw/master/Paper.pdf)` for the generated output.
+[`Paper.pdf`](https://github.com/Bekt/thesis-template/raw/master/Paper.pdf) for the generated output.
 
 A complete paper using this template: 
 [Tweetement: Pseudo-relevance Feedback for Twitter
@@ -30,7 +30,6 @@ open Paper.pdf
 `pdflatex` is just an example.
 It generates the `Paper.pdf` file.
 You can use whatever distribution or IDE you prefer to compile.
-
 
 ## License
 MIT
