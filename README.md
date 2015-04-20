@@ -1,9 +1,14 @@
 ## Thesis Template
 
-Generic and customizable thesis and dissertation LaTeX template with
+Generic and customizable thesis / dissertation LaTeX template with
 examples.
 
-Please see `Paper.pdf` for the generated output.
+Please see
+`[Paper.pdf](https://github.com/Bekt/thesis-template/raw/master/Paper.pdf)` for the generated output.
+
+A complete paper using this template: 
+[Tweetement: Pseudo-relevance Feedback for Twitter
+Search](http://bit.ly/kb-thesis)
 
 When I was writing my undergraduate thesis, I could not find any
 template that was simple and short. Thus, I came up with this. 
@@ -14,6 +19,8 @@ undergraduate Honors College requirements (2015).
 However, feel free to modify them according to your needs.
 
 Get started:
+
+Take a look at `Paper.tex`.
 
 ```bash
 pdflatex Paper.tex
